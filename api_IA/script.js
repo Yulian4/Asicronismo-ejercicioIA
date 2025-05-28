@@ -8,14 +8,14 @@ const imagenes = [
 
 ]
 
-const aleatoria = imagenes[Math.floor(Math.random()*imagenes.length)]
+const aleatoria = imagenes[Math.floor(Math.random() * imagenes.length)]
 
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("imagen").src = aleatoria;
 })
 
 async function sendToGemini() {
-  
+
     const inputText = document.getElementById('inputText').value;
     const responseContainer = document.getElementById('responseContainer');
     const loader = document.getElementById('loader');
@@ -74,11 +74,17 @@ async function sendToGemini() {
             respuesta = data.candidates[0].content.parts[0].text;
 
             if (respuesta.toLowerCase().trim() === "positivo") {
-                Swal.fire("Clasificación",respuesta,"success")
+                Swal.fire("La clasificación de tu comentario es: ", respuesta, "success").then(() => {
+                    location.reload();
+                });
             } else if (respuesta.toLowerCase().trim() === "negativo") {
-                 Swal.fire("Clasificación",respuesta,"error")
+                Swal.fire("La clasificación de tu comentario es:", respuesta, "error").then(() => {
+                    location.reload();
+                });
             } else {
-                 Swal.fire("Clasificación",respuesta,"warning")
+                Swal.fire("La clasificación de tu comentario es:", respuesta, "warning").then(() => {
+                    location.reload();
+                });
             }
 
         } else if (data.promptFeedback && data.promptFeedback.blockReason) {
