@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API App</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Comenta que te parece la siguiente imagen: </h1>
+        <img id="imagen" src="" alt="imagen">
+        <textarea id="inputText" placeholder="Dejanos tu comentario"></textarea>
+        <button onclick="sendToGemini()">Enviar a Gemini</button>
+        <div class="loader" id="loader"></div>
+        <div id="responseContainer">
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
