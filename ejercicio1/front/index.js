@@ -6,7 +6,7 @@ document.getElementById("generar").addEventListener("click",async()=>{
         document.getElementById("msj").textContent="Recuerda ingresar datos válidos"
         return
     }
-    if(bloques<=0||isNaN(bloques)){
+    if(bloques<=0||isNaN(bloques)||bloques> cantidad){
         document.getElementById("msj").textContent="Recuerda ingresar datos validos"
         return
     }
