@@ -20,7 +20,7 @@ async function sendToGemini() {
     const responseContainer = document.getElementById('responseContainer');
     const loader = document.getElementById('loader');
     const apiKey = "AIzaSyDQsUtn0MsaxqHSCX72sfEIGVfyUkVw7GM";
-    const texto = 'Clasifica el siguiente comentario respondiendo solo "positivo" o "negativo: "' + inputText
+    const texto = 'Clasifica el siguiente comentario respondiendo solo "positivo" , "negativo " y si no tiene clasificacion en positivo y negativo dices "neutral : "' + inputText
 
 
     if (!inputText.trim()) {
