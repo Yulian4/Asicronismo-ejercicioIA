@@ -2,10 +2,10 @@
 const imagenes = [
     'assets/gatito.png',
     'assets/perro.jpg',
-    'assets/elefante.webp',
-    'assets/pantera.webp',
     'assets/tiburoncin.webp',
-
+    'assets/elefante.webp',
+    'assets/pantera.jpg',
+    'assets/duck.jpg'
 ]
 
 const aleatoria = imagenes[Math.floor(Math.random() * imagenes.length)]
