@@ -1,22 +1,21 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pregunta a la IA</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>Pregunta a la IA</h1>
-        <textarea id="prompt"></textarea>
-        <button onclick="sendMsj()">Enviar</button>
-          <h2>Respuesta de Gemini:</h2>
-        <div id="respuestaIA">
-            </div>
-    </div>
+  <div class="contenedor">
+    <h1>Pregunta a la IA</h1>
+    <textarea id="prompt" placeholder="Escribe tu mensaje aquí..."></textarea>
+    <button onclick="sendMsj()">Enviar</button>
+    <button onclick="btnDiscord()">Enviar mensaje a discord</button>
+    <h2>Respuesta de Gemini:</h2>
+    <div id="respuestaIA"></div>
+  </div>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 </html>

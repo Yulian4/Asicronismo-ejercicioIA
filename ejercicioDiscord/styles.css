@@ -1,0 +1,70 @@
+   body {
+      font-family: Arial, sans-serif;
+      background-image: url(background.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contenedor {
+      background: rgba(0, 0, 0, 0.433);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: bolder;
+    }
+
+    textarea {
+        width: 90%;
+      height: 100px;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      resize: none;
+      font-size: 1rem;
+      background: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    button {
+      margin-top: 1rem;
+      background: linear-gradient(to left,#903ba7, #42729c);
+      color: white;
+      font-weight: bolder;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-right: 4vh;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    #respuestaIA {
+      margin-top: 1rem;
+    background: transparent;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      min-height: 50px;
+      white-space: pre-wrap;
+      color: white;
+    }
